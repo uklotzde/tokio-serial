@@ -11,9 +11,7 @@ readme = "README.md"
 keywords = ["rs232", "serial", "tokio"]
 categories = ["asynchronous", "hardware-support"]
 edition = "2018"
-
-[package.metadata]
-msrv = "1.46.0"
+rust-version = "1.70"
 
 [features]
 default = []
@@ -25,7 +23,7 @@ codec = ["tokio-util/codec", "bytes"]
 version = "0.3"
 
 [dependencies.tokio]
-version = "^1.8"
+version = "^1.39"
 default-features = false
 features = ["net"]
 
@@ -50,7 +48,7 @@ version = "0.4"
 version = "1"
 
 [dev-dependencies.tokio]
-version = "^1.8"
+version = "^1.39"
 features = ["macros", "rt", "process", "time", "fs", "io-util"]
 default-features = false
 
